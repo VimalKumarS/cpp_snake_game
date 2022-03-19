@@ -44,3 +44,11 @@ This work is licensed under a
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+### Criteria Addressed:
+
+- The project reads data from an external file or writes data to a file as part of the necessary operation of the program. => renderer.cpp, load asset as background 
+- The project code is organized into classes with class attributes to hold the data, and class methods to perform tasks. => AI.h/AI.cpp
+- Appropriate data and functions are grouped into classes. Member data that is subject to an invariant is hidden from the user. State is accessed via member functions. => AI.cpp, Computer auto play track the state of snake and food
+- The project uses at least one smart pointer: unique_ptr, shared_ptr, or weak_ptr. The project does not use raw pointers. => game.h std::unique_ptr<AI> ai;
+- At least two variables are defined as references, or two functions use pass-by-reference in the project code. => AI.cpp AI::AI() ~ctr
